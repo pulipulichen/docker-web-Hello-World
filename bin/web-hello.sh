@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJECT_NAME=docker-web-MEME-PAM-Explorer
+PROJECT_NAME=docker-web-Hello-World
 
 # =================================================================
 
@@ -13,7 +13,6 @@ getRealpath() {
   fi
   echo "${path}"
 }
-
 
 # =================================================================
 

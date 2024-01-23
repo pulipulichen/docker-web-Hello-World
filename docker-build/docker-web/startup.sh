@@ -82,7 +82,7 @@ while true; do
     if [[ $(echo "$response" | jq -e . 2>/dev/null) ]]; then
         echo "Received JSON, sleeping for 5 seconds..."
         sleep 5
-    elif [[ $response =~ "<html" || $response =~ "<!DOCTYPE" ]]; then
+    elif [[ $response =~ "<html" || $response =~ "<!DOCTYPE" || $response =~ "Hello, world!" ]]; then
         sleep 10
         echo "Received HTML, it's okay!"
         break
