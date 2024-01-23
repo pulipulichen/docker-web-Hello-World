@@ -4,7 +4,7 @@ services:
     image: pudding/docker-web:docker-web-hello-world-app-20240124.040629
     tty: true
     ports:
-      - "8081:8081"
+      - "8080:8080"
     environment:
       - LOCAL_VOLUMN_PATH=/opt/app/
       - CONTAINER_NAME=docker-web-hello-world-app
