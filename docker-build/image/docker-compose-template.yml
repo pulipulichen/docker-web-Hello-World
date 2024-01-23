@@ -9,7 +9,8 @@ services:
       - LOCAL_VOLUMN_PATH=/opt/app/
       - CONTAINER_NAME=docker-web-hello-world-app
     volumes: 
-      - "__SOURCE__:/opt/app/"
+      #- "__SOURCE__:/opt/app/"
+      - "__SOURCE_APP__:/opt/app/"
     # restart: on-failure
     networks:
       - docker_web_network
