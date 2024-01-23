@@ -24,7 +24,7 @@ rm -f "${LOCAL_VOLUMN_PATH}/.cloudflare.url" || true
 ls -la "${LOCAL_VOLUMN_PATH}/"
 
 # /usr/local/bin/node /app/server.js &
-eval "${RUN_COMMAND}" &
+eval "${STARTUP_COMMAND}" &
 
 #echo "BEFORE ================================================================="
 waitForConntaction "${LOCAL_PORT}"

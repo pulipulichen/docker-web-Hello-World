@@ -5,14 +5,14 @@ services:
     tty: true
     #user: solr
     ports: # external:internal
-      - "8080:8080"
+      - "8081:8081"
     networks:
       - docker_web_network
-    depends_on:
-      - db
-    restart: on-failure
+    # restart: on-failure
     volumes: 
       - "./app:/opt/app"
+    # depends_on:
+    #   - db
   # db:
   #   image: postgres:13.13-bullseye
   #   tty: true
