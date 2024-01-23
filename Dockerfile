@@ -18,13 +18,14 @@ WORKDIR /opt/
 
 ENV LOCAL_PORT=80
 ENV LOCAL_VOLUMN_PATH=/opt/app/
-ENV STARTUP_COMMAND="node /opt/app/index.js"
+ENV STARTUP_COMMAND="nodemon /opt/app/index.js"
 ENV HOMEPAGE_URI=/
 
 # =================================================================
 
 COPY package.json /opt/
 RUN npm install
+RUN npm install -g nodemon
 
 # =================================================================
 
