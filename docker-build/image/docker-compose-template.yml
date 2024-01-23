@@ -6,8 +6,11 @@ services:
     ports:
       - "8081:8081"
     environment:
-      - LOCAL_VOLUMN_PATH=/opt/app/
       - CONTAINER_NAME=docker-web-hello-world-app
+      - LOCAL_VOLUMN_PATH=/opt/app/
+      - LOCAL_PORT=8081
+      - RUN_COMMAND="node /opt/app/index.js"
+      - HOMEPAGE_URI=/
     volumes: 
       - "__SOURCE__/opt/app/"
     restart: on-failure

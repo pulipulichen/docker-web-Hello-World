@@ -12,12 +12,6 @@ WORKDIR /opt/
 
 # =================================================================
 
-# For docker web
-ENV LOCAL_PORT=8080
-ENV LOCAL_VOLUMN_PATH=/opt/app/
-ENV RUN_COMMAND="node /opt/app/index.js"
-ENV HOMEPAGE_URI=/
-
 # =================================================================
 
 COPY package.json /opt/
