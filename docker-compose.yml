@@ -5,7 +5,7 @@ services:
     tty: true
     #user: solr
     ports: # external:internal
-      - "8080:8080"
+      - "28080:80"
     networks:
       - docker_web_network
     # restart: on-failure
