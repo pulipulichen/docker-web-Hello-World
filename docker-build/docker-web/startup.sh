@@ -11,7 +11,7 @@ waitForConntaction() {
       echo "Connection successful."
       break
     else
-      #echo "Connection failed. Retrying in 5 seconds..."
+      echo "Connection failed. Retrying in 5 seconds..."
       sleep 5
     fi
   done
