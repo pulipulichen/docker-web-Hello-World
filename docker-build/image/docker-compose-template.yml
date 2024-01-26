@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    image: pudding/docker-web:docker-web-hello-world-app-20240126.171131
+    image: pudding/docker-web:docker-web-hello-world-app-20240126.171411
     tty: true
     ports:
       - "__EXT_PORT__:80"
