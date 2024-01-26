@@ -9,7 +9,8 @@
     "reset-start": "rm -rf ./docker-web-Hello-World; docker-compose up --build",
     "d0.build": "docker-compose build",
     "d1.bash": "docker-compose run --service-ports app bash /console.sh",
-    "save-conf": "bash ./docker-build/save-conf.sh"
+    "save-conf": "bash ./docker-build/save-conf.sh",
+    "remove-containers": "docker rm $(docker ps -a --filter \"name=docker-web-hello-world-\" -q)"
   },
   "repository": {
     "type": "git",
