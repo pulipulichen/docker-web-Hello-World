@@ -11,7 +11,7 @@ waitForConntaction() {
       echo "Connection successful."
       break
     else
-      echo "Connection failed. Retrying in 5 seconds..."
+      echo "http://127.0.0.1:$port > Connection failed. Retrying in 5 seconds..."
       sleep 5
     fi
   done
