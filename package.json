@@ -10,7 +10,8 @@
     "d0.build": "docker-compose build",
     "d1.bash": "docker-compose run --service-ports app bash /console.sh",
     "save-conf": "bash ./docker-build/save-conf.sh",
-    "remove-containers": "docker rm $(docker ps -a --filter \"name=docker-web-hello-world-\" -q)"
+    "remove-containers": "docker rm $(docker ps -a --filter \"name=docker-web-hello-world-\" -q)",
+    "fix-docker-network": "docker network prune -f"
   },
   "repository": {
     "type": "git",
